@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Add Habit<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="" id="display-form">Add Habit</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Week View</a>
@@ -19,8 +19,8 @@
         <h1>Habit Form</h1>
         <div class="form-group">
             <label for="formGroupExampleInput">Select Habit</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput">
-                <option selected>Choose...</option>
+            <select class="custom-select mr-sm-2" id="formGroupExampleInput" required>
+                <option >Choose...</option>
                 <option value="Swimming">Swimming</option>
                 <option value="Running">Running</option>
                 <option value="Walking">Walking</option>   
@@ -30,8 +30,8 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput2">Start Time</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput2">
-                <option selected>Choose...</option>
+            <select class="custom-select mr-sm-2" id="formGroupExampleInput2" required>
+                <option >Choose...</option>
                 <option value="6 Am">6 Am</option>
                 <option value="7 Am">7 Am</option>
                 <option value="8 Am">8 Am</option>
@@ -42,8 +42,8 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput3">Start Time</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput3">
-                <option selected>Choose...</option>
+            <select class="custom-select mr-sm-2" id="formGroupExampleInput3" required>
+                <option >Choose...</option>
                 <option value="7 Am">7 Am</option>
                 <option value="8 Am">8 Am</option>
                 <option value="9 Am">9 Am</option>
@@ -54,15 +54,15 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput4">Routine</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput4">
-                <option selected>Choose...</option>
+            <select class="custom-select mr-sm-2" id="formGroupExampleInput4" required>
+                <option >Choose...</option>
                 <option value="Daily">Daily</option>
                 <option value="Once">Once</option>
             </select>
         </div>
         <div class="form-group row"  id="btn">
             <div class="col-sm-10" >
-              <button type="submit" class="btn btn-primary">Add Habit</button>
+              <button type="submit" class="btn btn-primary">Add Habit</button >
             </div>
         </div>
     </form>
