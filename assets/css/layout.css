@@ -1,2 +1,23 @@
-body {
-  background-color: purple; }
+nav {
+  width: 50%;
+  margin: auto; }
+
+#main-form-container {
+  width: 50%;
+  margin: auto;
+  display: none; }
+
+#form-container {
+  margin: auto;
+  width: 60%;
+  color: red;
+  padding: 10px; }
+
+#btn {
+  width: 50%;
+  margin: auto; }
+
+#form-container h1 {
+  width: 50%;
+  margin: auto;
+  color: lightcoral; }
