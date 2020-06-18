@@ -11,8 +11,18 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views','./views');
 
+// adding the sass middleware to style css in newWay
+const sassMiddleWare = require('node-sass-middleware');
+app.use(sassMiddleWare({
+    src : './assets/scss',
+    dest : './assets/css',
+    debug : true,
+    outputStyle : 'extended',
+    prefix : '/css'
+}));
+
 // connect the database with the server
-const db = require('./config/mongoose');
+// const db = require('./config/mongoose');
 
 // tell the server to use static files from assets
 app.use(express.static('./assets'));
