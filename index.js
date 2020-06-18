@@ -11,6 +11,12 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views','./views');
 
+// connect the database with the server
+const db = require('./config/mongoose');
+
+// tell the server to use static files from assets
+app.use(express.static('./assets'));
+
 // tell the server to use layouts
 const expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts);
