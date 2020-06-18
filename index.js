@@ -9,7 +9,11 @@ const app = express();
 
 // adding the view and view engine
 app.set('view engine','ejs');
-app.set('views','.views');
+app.set('views','./views');
+
+// tell the server to use layouts
+const expressLayouts = require('express-ejs-layouts');
+app.use(expressLayouts);
 
 // tell the server to use router
 app.use('/',require('./routers'));
