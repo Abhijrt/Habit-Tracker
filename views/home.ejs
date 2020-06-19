@@ -4,10 +4,22 @@
     <ul class="list-details">
         <% for(habit of habits) { %>
         <li class="detail">
-            <%= habit.habit %>
-            <%= habit.startTime %>
-            <%= habit.endTime %>
-            <%= habit.routine %>
+            <input id="habit-delete" type="checkbox">
+            <div id="habit-name">      
+                <%= habit.habit %>
+            </div>
+            <div id="habit-start">
+                <%= habit.startTime %>
+            </div>
+            <div id="habit-end">
+                <%= habit.endTime %>
+            </div>
+            <div id='habit-routine'>
+                <%= habit.routine %>
+            </div>
+            <div >
+                <i id="start-icon" class="fas fa-star"></i>
+            </div>
         </li>
         <%}%>
     </ul>
