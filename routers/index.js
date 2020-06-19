@@ -9,6 +9,7 @@ const homeController = require('../controllers/home_controller');
 
 // calling the controller on the get method come for the url
 router.get('/',homeController.home);
+router.post('/create',homeController.create);
 
 console.log("Router Loaded");
 // Export the router to user in another file

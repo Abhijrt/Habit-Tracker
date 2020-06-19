@@ -8,22 +8,28 @@ nav{
 #main-form-container{
     width: 50%;
     margin: auto;
+    // border : 1px solid black;
+}
+
+#form-detail{
     display: none;
 }
 
 // positioning the fields in the center
 #form-container{
-    margin: auto;
     width: 60%;
+    margin: auto;
     color: red;
     padding: 10px;
 }
 
+// button position
 #btn{
     width: 50%;
     margin: auto;
 }
 
+// heading of form
 #form-container h1{
     width: 50%;
     margin: auto;

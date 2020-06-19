@@ -15,11 +15,12 @@
     </div>
 </nav>
 <main id="main-form-container">
-    <form action="" method="POST" id="form-container">
+  <div id="form-detail">
+    <form action="/create" method="POST" id="form-container">
         <h1>Habit Form</h1>
         <div class="form-group">
             <label for="formGroupExampleInput">Select Habit</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput" required>
+            <select name="habit" class="custom-select mr-sm-2" id="formGroupExampleInput" required>
                 <option >Choose...</option>
                 <option value="Swimming">Swimming</option>
                 <option value="Running">Running</option>
@@ -30,7 +31,7 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput2">Start Time</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput2" required>
+            <select name="startTime" class="custom-select mr-sm-2" id="formGroupExampleInput2" required>
                 <option >Choose...</option>
                 <option value="6 Am">6 Am</option>
                 <option value="7 Am">7 Am</option>
@@ -42,7 +43,7 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput3">Start Time</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput3" required>
+            <select name="endTime" class="custom-select mr-sm-2" id="formGroupExampleInput3" required>
                 <option >Choose...</option>
                 <option value="7 Am">7 Am</option>
                 <option value="8 Am">8 Am</option>
@@ -54,7 +55,7 @@
         </div>
         <div class="form-group">
             <label for="formGroupExampleInput4">Routine</label>
-            <select class="custom-select mr-sm-2" id="formGroupExampleInput4" required>
+            <select name="routine" class="custom-select mr-sm-2" id="formGroupExampleInput4" required>
                 <option >Choose...</option>
                 <option value="Daily">Daily</option>
                 <option value="Once">Once</option>
@@ -66,5 +67,6 @@
             </div>
         </div>
     </form>
+  </div>
 </main>
 

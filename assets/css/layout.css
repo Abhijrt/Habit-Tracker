@@ -4,12 +4,14 @@ nav {
 
 #main-form-container {
   width: 50%;
-  margin: auto;
+  margin: auto; }
+
+#form-detail {
   display: none; }
 
 #form-container {
-  margin: auto;
   width: 60%;
+  margin: auto;
   color: red;
   padding: 10px; }
 

@@ -21,11 +21,16 @@ app.use(sassMiddleWare({
     prefix : '/css'
 }));
 
-// connect the database with the server
-// const db = require('./config/mongoose');
+// taking the data form the req argument
+app.use(express.urlencoded());
+
 
 // tell the server to use static files from assets
 app.use(express.static('./assets'));
+
+// connect the database with the server
+const db = require('./config/mongoose');
+
 
 // tell the server to use layouts
 const expressLayouts = require('express-ejs-layouts');

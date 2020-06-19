@@ -2,6 +2,6 @@
 const formId = document.getElementById('display-form');
 formId.addEventListener('click',function(e){
     e.preventDefault();
-    const mainForm = document.getElementById('main-form-container');
+    const mainForm = document.getElementById('form-detail');
     mainForm.style.display = "inline";
 });
