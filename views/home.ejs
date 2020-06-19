@@ -1,0 +1,14 @@
+
+
+<main class="main-home-container">
+    <ul class="list-details">
+        <% for(habit of habits) { %>
+        <li class="detail">
+            <%= habit.habit %>
+            <%= habit.startTime %>
+            <%= habit.endTime %>
+            <%= habit.routine %>
+        </li>
+        <%}%>
+    </ul>
+</main>
