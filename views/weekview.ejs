@@ -1,24 +1,28 @@
 <main id="main-week-container">
-    <h1>Week View</h1>
-    <div id='monthe-container'>
-        <p>Sun</p>
-        <p>Mon</p>
-        <p>Tue</p>
-        <p>Wed</p>
-        <p>Thu</p>
-        <p>Fri</p>
-        <p>Sat</p>
-    </div id="details-container">
-    <% for(habit of habits) {%>
-        <p><%=habit.habit%></p>
-        <ul id="date-container">
-            <li id="dates">1</li>
-            <li id="dates">2</li>
-            <li id="dates">3</li>
-            <li id="dates">4</li>
-            <li id="dates">5</li>
-            <li id="dates">6</li>
-            <li id="dates">7</li>
-        </ul>
-    <%}%>
+    <div id="main-week">
+        <h3>Week View</h3>
+        <div id='month-container'>
+            <p>Sun</p>
+            <p>Mon</p>
+            <p>Tue</p>
+            <p>Wed</p>
+            <p>Thu</p>
+            <p>Fri</p>
+            <p>Sat</p>
+        </div>
+        <div id="details-container">
+        <% for(habit of habits) {%>
+            <p><%=habit.habit%></p>
+            <ul id="date-container">
+                <li id="dates">1</li>
+                <li id="dates">2</li>
+                <li id="dates">3</li>
+                <li id="dates">4</li>
+                <li id="dates">5</li>
+                <li id="dates">6</li>
+                <li id="dates">7</li>
+            </ul>
+        <%}%>
+        </div>
+    </div>
 </main>

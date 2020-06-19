@@ -1,0 +1,23 @@
+#main-week-container {
+  width: 50%;
+  margin: auto; }
+  #main-week-container #main-week {
+    width: 50%;
+    margin: auto;
+    background-color: lightgray; }
+    #main-week-container #main-week h3 {
+      width: 50%;
+      margin: auto; }
+    #main-week-container #main-week #month-container {
+      background-color: lightgray; }
+      #main-week-container #main-week #month-container P {
+        display: inline-block;
+        margin: 9px; }
+    #main-week-container #main-week #details-container p {
+      background-color: grey;
+      color: gold; }
+    #main-week-container #main-week #details-container #date-container li {
+      display: inline-block;
+      border: 1px solid grey;
+      width: 10%;
+      height: 50px; }
