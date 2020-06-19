@@ -24,6 +24,6 @@ module.exports.create = function(req,res){
             console.log("Error while svaing the data to the database");
             return;
         }
-        return res.redirec('back');
+        return res.redirect('back');
     });
 }
