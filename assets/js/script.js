@@ -20,6 +20,12 @@ icon.addEventListener('click',function(){
     icon.style.color = "red";
 });
 
+const dateSelect = document.getElementById('dates');
+dateSelect.addEventListener('click',function(){
+    const allBtns = document.getElementsByClassName('btns');
+    
+});
+
 
 
 // adding the habit by ajax
@@ -40,7 +46,7 @@ function createHabit(){
                 console.log("hii abhay you are in create of ajax");
                 swal({
                     title: "Added Successfully!",
-                    text: "The new task is added!",
+                    text: "The new Habit is added!",
                     icon: "success",
                 });
             },

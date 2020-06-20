@@ -11,6 +11,8 @@ const homeController = require('../controllers/home_controller');
 router.get('/',homeController.home);
 router.post('/create',homeController.create);
 router.get('/week',homeController.week);
+router.get('/dayStatus',homeController.dayStatus);
+router.get('/changeStatus',homeController.changeStatus);
 console.log("Router Loaded");
 // Export the router to user in another file
 module.exports = router;

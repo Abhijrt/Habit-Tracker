@@ -1,0 +1,18 @@
+.button-container {
+  border-radius: 20px;
+  background: antiquewhite;
+  width: 30%;
+  /* border: 2px solid green; */
+  display: flex;
+  align-items: center; }
+
+.button {
+  width: 35%; }
+  .button button {
+    font-size: 2.4rem;
+    width: 100%;
+    background: transparent;
+    /* border: 2px solid aquamarine; */
+    border: none;
+    background: none;
+    color: #2b6802; }

@@ -10,18 +10,12 @@
             <p>Fri</p>
             <p>Sat</p>
         </div>
-        <div id="details-container">
+        <div id="details-container" class="detail-container">
         <% for(habit of habits) {%>
-            <p><%=habit.habit%></p>
-            <ul id="date-container">
-                <li id="dates">1</li>
-                <li id="dates">2</li>
-                <li id="dates">3</li>
-                <li id="dates">4</li>
-                <li id="dates">5</li>
-                <li id="dates">6</li>
-                <li id="dates">7</li>
-            </ul>
+            <p class="habit-name"><%=habit.habit%></p>
+            <div class='day-status' id="day-<%= habit._id %>">
+
+            </div>
         <%}%>
         </div>
     </div>
